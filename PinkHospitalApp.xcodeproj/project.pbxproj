@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A76F676F2C29A3140010A658 /* PinkHospitalAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F676E2C29A3140010A658 /* PinkHospitalAppApp.swift */; };
+		A76F67762C29A3150010A658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76F67752C29A3150010A658 /* Preview Assets.xcassets */; };
+		A76F677F2C2ADCC60010A658 /* ConverterNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F677E2C2ADCC60010A658 /* ConverterNetworkModel.swift */; };
+		A76F67822C2ADD4B0010A658 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67812C2ADD4B0010A658 /* Models.swift */; };
+		A76F67842C2ADD900010A658 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67832C2ADD900010A658 /* Endpoint.swift */; };
+		A76F67862C2ADDBE0010A658 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67852C2ADDBE0010A658 /* NetworkClient.swift */; };
+		A76F67882C2ADDEB0010A658 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67872C2ADDEB0010A658 /* NetworkClientError.swift */; };
+		A76F678A2C2ADE1A0010A658 /* NetworkErrorDescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67892C2ADE1A0010A658 /* NetworkErrorDescriptionModel.swift */; };
+		A76F678C2C2ADE350010A658 /* DoctorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F678B2C2ADE350010A658 /* DoctorService.swift */; };
+		A76F678F2C2ADE9D0010A658 /* DoctorShotUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F678E2C2ADE9D0010A658 /* DoctorShotUIModel.swift */; };
+		A76F67912C2ADECC0010A658 /* DoctorPropertyUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67902C2ADECC0010A658 /* DoctorPropertyUIModel.swift */; };
+		A76F67932C2ADEE00010A658 /* PriceUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67922C2ADEE00010A658 /* PriceUIModel.swift */; };
+		A76F67952C2ADEF00010A658 /* DoctorUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67942C2ADEF00010A658 /* DoctorUIModel.swift */; };
+		A76F67972C2ADF080010A658 /* DoctorSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67962C2ADF080010A658 /* DoctorSort.swift */; };
+		A76F67992C2ADF220010A658 /* PriceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67982C2ADF220010A658 /* PriceType.swift */; };
+		A76F679B2C2ADF3C0010A658 /* PricesUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F679A2C2ADF3C0010A658 /* PricesUIModel.swift */; };
+		A76F679E2C2ADFE40010A658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F679D2C2ADFE40010A658 /* ContentView.swift */; };
+		A76F67A02C2AE0030010A658 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F679F2C2AE0030010A658 /* Coordinator.swift */; };
+		A76F67A22C2AE01A0010A658 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67A12C2AE01A0010A658 /* CoordinatorView.swift */; };
+		A76F67A52C2AE0650010A658 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67A42C2AE0650010A658 /* MainViewModel.swift */; };
+		A76F67A72C2AE0B60010A658 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67A62C2AE0B60010A658 /* MainView.swift */; };
+		A76F67A92C2AE10D0010A658 /* DoctorShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67A82C2AE10D0010A658 /* DoctorShotView.swift */; };
+		A76F67AC2C2AE1680010A658 /* DoctorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67AB2C2AE1680010A658 /* DoctorScreenView.swift */; };
+		A76F67AE2C2AE18E0010A658 /* DoctorPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67AD2C2AE18E0010A658 /* DoctorPropertyView.swift */; };
+		A76F67B12C2AE3CD0010A658 /* PriceScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67B02C2AE3CD0010A658 /* PriceScreenView.swift */; };
+		A76F67B42C2AE4330010A658 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67B32C2AE4330010A658 /* CalendarView.swift */; };
+		A76F67B72C2AE4850010A658 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67B62C2AE4850010A658 /* ChatView.swift */; };
+		A76F67BA2C2AE4BE0010A658 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67B92C2AE4BE0010A658 /* ProfileView.swift */; };
+		A76F67C62C2AE7510010A658 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67BD2C2AE7510010A658 /* RatingView.swift */; };
+		A76F67C72C2AE7510010A658 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67BE2C2AE7510010A658 /* AvatarView.swift */; };
+		A76F67C82C2AE7510010A658 /* NavigationTitleModify.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67BF2C2AE7510010A658 /* NavigationTitleModify.swift */; };
+		A76F67C92C2AE7510010A658 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76F67C02C2AE7510010A658 /* Color.xcassets */; };
+		A76F67CA2C2AE7510010A658 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76F67C12C2AE7510010A658 /* Icon.xcassets */; };
+		A76F67CB2C2AE7510010A658 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67C22C2AE7510010A658 /* SignUpButton.swift */; };
+		A76F67CC2C2AE7510010A658 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67C32C2AE7510010A658 /* PriceView.swift */; };
+		A76F67CD2C2AE7510010A658 /* Font_ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67C42C2AE7510010A658 /* Font_ext..swift */; };
+		A76F67CE2C2AE7510010A658 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F67C52C2AE7510010A658 /* FilterView.swift */; };
+		A76F67D12C2AE9600010A658 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A76F67D02C2AE9600010A658 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A76F676B2C29A3140010A658 /* PinkHospitalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkHospitalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76F676E2C29A3140010A658 /* PinkHospitalAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkHospitalAppApp.swift; sourceTree = "<group>"; };
+		A76F67752C29A3150010A658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A76F677E2C2ADCC60010A658 /* ConverterNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterNetworkModel.swift; sourceTree = "<group>"; };
+		A76F67812C2ADD4B0010A658 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A76F67832C2ADD900010A658 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A76F67852C2ADDBE0010A658 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		A76F67872C2ADDEB0010A658 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
+		A76F67892C2ADE1A0010A658 /* NetworkErrorDescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorDescriptionModel.swift; sourceTree = "<group>"; };
+		A76F678B2C2ADE350010A658 /* DoctorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorService.swift; sourceTree = "<group>"; };
+		A76F678E2C2ADE9D0010A658 /* DoctorShotUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorShotUIModel.swift; sourceTree = "<group>"; };
+		A76F67902C2ADECC0010A658 /* DoctorPropertyUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPropertyUIModel.swift; sourceTree = "<group>"; };
+		A76F67922C2ADEE00010A658 /* PriceUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceUIModel.swift; sourceTree = "<group>"; };
+		A76F67942C2ADEF00010A658 /* DoctorUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorUIModel.swift; sourceTree = "<group>"; };
+		A76F67962C2ADF080010A658 /* DoctorSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSort.swift; sourceTree = "<group>"; };
+		A76F67982C2ADF220010A658 /* PriceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceType.swift; sourceTree = "<group>"; };
+		A76F679A2C2ADF3C0010A658 /* PricesUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesUIModel.swift; sourceTree = "<group>"; };
+		A76F679D2C2ADFE40010A658 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A76F679F2C2AE0030010A658 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A76F67A12C2AE01A0010A658 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		A76F67A42C2AE0650010A658 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A76F67A62C2AE0B60010A658 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A76F67A82C2AE10D0010A658 /* DoctorShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorShotView.swift; sourceTree = "<group>"; };
+		A76F67AB2C2AE1680010A658 /* DoctorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScreenView.swift; sourceTree = "<group>"; };
+		A76F67AD2C2AE18E0010A658 /* DoctorPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPropertyView.swift; sourceTree = "<group>"; };
+		A76F67B02C2AE3CD0010A658 /* PriceScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceScreenView.swift; sourceTree = "<group>"; };
+		A76F67B32C2AE4330010A658 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		A76F67B62C2AE4850010A658 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A76F67B92C2AE4BE0010A658 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A76F67BD2C2AE7510010A658 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		A76F67BE2C2AE7510010A658 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		A76F67BF2C2AE7510010A658 /* NavigationTitleModify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTitleModify.swift; sourceTree = "<group>"; };
+		A76F67C02C2AE7510010A658 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		A76F67C12C2AE7510010A658 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
+		A76F67C22C2AE7510010A658 /* SignUpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
+		A76F67C32C2AE7510010A658 /* PriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		A76F67C42C2AE7510010A658 /* Font_ext..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font_ext..swift; sourceTree = "<group>"; };
+		A76F67C52C2AE7510010A658 /* FilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A76F67682C29A3140010A658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76F67D12C2AE9600010A658 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76F67622C29A3140010A658 = {
+			isa = PBXGroup;
+			children = (
+				A76F676D2C29A3140010A658 /* PinkHospitalApp */,
+				A76F676C2C29A3140010A658 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76F676C2C29A3140010A658 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A76F676B2C29A3140010A658 /* PinkHospitalApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76F676D2C29A3140010A658 /* PinkHospitalApp */ = {
+			isa = PBXGroup;
+			children = (
+				A76F677C2C2ADC810010A658 /* Service */,
+				A76F678D2C2ADE700010A658 /* Model */,
+				A76F679C2C2ADF770010A658 /* View */,
+				A76F676E2C29A3140010A658 /* PinkHospitalAppApp.swift */,
+				A76F67BB2C2AE51F0010A658 /* Design */,
+				A76F67742C29A3150010A658 /* Preview Content */,
+			);
+			path = PinkHospitalApp;
+			sourceTree = "<group>";
+		};
+		A76F67742C29A3150010A658 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67752C29A3150010A658 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A76F677C2C2ADC810010A658 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A76F677D2C2ADC9A0010A658 /* Network */,
+				A76F677E2C2ADCC60010A658 /* ConverterNetworkModel.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A76F677D2C2ADC9A0010A658 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67802C2ADD3D0010A658 /* model */,
+				A76F67832C2ADD900010A658 /* Endpoint.swift */,
+				A76F67852C2ADDBE0010A658 /* NetworkClient.swift */,
+				A76F67872C2ADDEB0010A658 /* NetworkClientError.swift */,
+				A76F67892C2ADE1A0010A658 /* NetworkErrorDescriptionModel.swift */,
+				A76F678B2C2ADE350010A658 /* DoctorService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A76F67802C2ADD3D0010A658 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67812C2ADD4B0010A658 /* Models.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A76F678D2C2ADE700010A658 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A76F678E2C2ADE9D0010A658 /* DoctorShotUIModel.swift */,
+				A76F67902C2ADECC0010A658 /* DoctorPropertyUIModel.swift */,
+				A76F67922C2ADEE00010A658 /* PriceUIModel.swift */,
+				A76F67942C2ADEF00010A658 /* DoctorUIModel.swift */,
+				A76F67962C2ADF080010A658 /* DoctorSort.swift */,
+				A76F67982C2ADF220010A658 /* PriceType.swift */,
+				A76F679A2C2ADF3C0010A658 /* PricesUIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A76F679C2C2ADF770010A658 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A76F679D2C2ADFE40010A658 /* ContentView.swift */,
+				A76F679F2C2AE0030010A658 /* Coordinator.swift */,
+				A76F67A12C2AE01A0010A658 /* CoordinatorView.swift */,
+				A76F67A32C2AE03B0010A658 /* Main */,
+				A76F67B22C2AE4030010A658 /* Calendar */,
+				A76F67B52C2AE4690010A658 /* Chat */,
+				A76F67B82C2AE4A50010A658 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A76F67A32C2AE03B0010A658 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67A42C2AE0650010A658 /* MainViewModel.swift */,
+				A76F67A62C2AE0B60010A658 /* MainView.swift */,
+				A76F67A82C2AE10D0010A658 /* DoctorShotView.swift */,
+				A76F67AA2C2AE1550010A658 /* DoctorScreen */,
+				A76F67AF2C2AE3A50010A658 /* PriceScreen */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A76F67AA2C2AE1550010A658 /* DoctorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67AB2C2AE1680010A658 /* DoctorScreenView.swift */,
+				A76F67AD2C2AE18E0010A658 /* DoctorPropertyView.swift */,
+			);
+			path = DoctorScreen;
+			sourceTree = "<group>";
+		};
+		A76F67AF2C2AE3A50010A658 /* PriceScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67B02C2AE3CD0010A658 /* PriceScreenView.swift */,
+			);
+			path = PriceScreen;
+			sourceTree = "<group>";
+		};
+		A76F67B22C2AE4030010A658 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67B32C2AE4330010A658 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		A76F67B52C2AE4690010A658 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67B62C2AE4850010A658 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A76F67B82C2AE4A50010A658 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67B92C2AE4BE0010A658 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A76F67BB2C2AE51F0010A658 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67BC2C2AE6780010A658 /* Design */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		A76F67BC2C2AE6780010A658 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				A76F67BE2C2AE7510010A658 /* AvatarView.swift */,
+				A76F67C02C2AE7510010A658 /* Color.xcassets */,
+				A76F67C52C2AE7510010A658 /* FilterView.swift */,
+				A76F67C42C2AE7510010A658 /* Font_ext..swift */,
+				A76F67C12C2AE7510010A658 /* Icon.xcassets */,
+				A76F67BF2C2AE7510010A658 /* NavigationTitleModify.swift */,
+				A76F67C32C2AE7510010A658 /* PriceView.swift */,
+				A76F67BD2C2AE7510010A658 /* RatingView.swift */,
+				A76F67C22C2AE7510010A658 /* SignUpButton.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A76F676A2C29A3140010A658 /* PinkHospitalApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76F67792C29A3150010A658 /* Build configuration list for PBXNativeTarget "PinkHospitalApp" */;
+			buildPhases = (
+				A76F67672C29A3140010A658 /* Sources */,
+				A76F67682C29A3140010A658 /* Frameworks */,
+				A76F67692C29A3140010A658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinkHospitalApp;
+			packageProductDependencies = (
+				A76F67D02C2AE9600010A658 /* Kingfisher */,
+			);
+			productName = PinkHospitalApp;
+			productReference = A76F676B2C29A3140010A658 /* PinkHospitalApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76F67632C29A3140010A658 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A76F676A2C29A3140010A658 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A76F67662C29A3140010A658 /* Build configuration list for PBXProject "PinkHospitalApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A76F67622C29A3140010A658;
+			packageReferences = (
+				A76F67CF2C2AE9600010A658 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = A76F676C2C29A3140010A658 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76F676A2C29A3140010A658 /* PinkHospitalApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76F67692C29A3140010A658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76F67762C29A3150010A658 /* Preview Assets.xcassets in Resources */,
+				A76F67CA2C2AE7510010A658 /* Icon.xcassets in Resources */,
+				A76F67C92C2AE7510010A658 /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A76F67672C29A3140010A658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76F678F2C2ADE9D0010A658 /* DoctorShotUIModel.swift in Sources */,
+				A76F67BA2C2AE4BE0010A658 /* ProfileView.swift in Sources */,
+				A76F67A72C2AE0B60010A658 /* MainView.swift in Sources */,
+				A76F67912C2ADECC0010A658 /* DoctorPropertyUIModel.swift in Sources */,
+				A76F67972C2ADF080010A658 /* DoctorSort.swift in Sources */,
+				A76F679B2C2ADF3C0010A658 /* PricesUIModel.swift in Sources */,
+				A76F67B42C2AE4330010A658 /* CalendarView.swift in Sources */,
+				A76F67B72C2AE4850010A658 /* ChatView.swift in Sources */,
+				A76F67932C2ADEE00010A658 /* PriceUIModel.swift in Sources */,
+				A76F677F2C2ADCC60010A658 /* ConverterNetworkModel.swift in Sources */,
+				A76F67CE2C2AE7510010A658 /* FilterView.swift in Sources */,
+				A76F679E2C2ADFE40010A658 /* ContentView.swift in Sources */,
+				A76F67A02C2AE0030010A658 /* Coordinator.swift in Sources */,
+				A76F67992C2ADF220010A658 /* PriceType.swift in Sources */,
+				A76F67CD2C2AE7510010A658 /* Font_ext..swift in Sources */,
+				A76F678C2C2ADE350010A658 /* DoctorService.swift in Sources */,
+				A76F67C82C2AE7510010A658 /* NavigationTitleModify.swift in Sources */,
+				A76F67882C2ADDEB0010A658 /* NetworkClientError.swift in Sources */,
+				A76F67A92C2AE10D0010A658 /* DoctorShotView.swift in Sources */,
+				A76F67952C2ADEF00010A658 /* DoctorUIModel.swift in Sources */,
+				A76F67CB2C2AE7510010A658 /* SignUpButton.swift in Sources */,
+				A76F67B12C2AE3CD0010A658 /* PriceScreenView.swift in Sources */,
+				A76F676F2C29A3140010A658 /* PinkHospitalAppApp.swift in Sources */,
+				A76F67AE2C2AE18E0010A658 /* DoctorPropertyView.swift in Sources */,
+				A76F67A22C2AE01A0010A658 /* CoordinatorView.swift in Sources */,
+				A76F67A52C2AE0650010A658 /* MainViewModel.swift in Sources */,
+				A76F67CC2C2AE7510010A658 /* PriceView.swift in Sources */,
+				A76F67AC2C2AE1680010A658 /* DoctorScreenView.swift in Sources */,
+				A76F67822C2ADD4B0010A658 /* Models.swift in Sources */,
+				A76F67842C2ADD900010A658 /* Endpoint.swift in Sources */,
+				A76F678A2C2ADE1A0010A658 /* NetworkErrorDescriptionModel.swift in Sources */,
+				A76F67862C2ADDBE0010A658 /* NetworkClient.swift in Sources */,
+				A76F67C62C2AE7510010A658 /* RatingView.swift in Sources */,
+				A76F67C72C2AE7510010A658 /* AvatarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A76F67772C29A3150010A658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A76F67782C29A3150010A658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A76F677A2C29A3150010A658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PinkHospitalApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solovey.PinkHospitalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A76F677B2C29A3150010A658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PinkHospitalApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solovey.PinkHospitalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A76F67662C29A3140010A658 /* Build configuration list for PBXProject "PinkHospitalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76F67772C29A3150010A658 /* Debug */,
+				A76F67782C29A3150010A658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76F67792C29A3150010A658 /* Build configuration list for PBXNativeTarget "PinkHospitalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76F677A2C29A3150010A658 /* Debug */,
+				A76F677B2C29A3150010A658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A76F67CF2C2AE9600010A658 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A76F67D02C2AE9600010A658 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76F67CF2C2AE9600010A658 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A76F67632C29A3140010A658 /* Project object */;
+}
